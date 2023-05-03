@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.chield {
+    width: 300px;
+    height: 200px;
+    background: green;
+    display: flex;
+    position: relative;
+}
+
+ .nati{
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: auto;
+    border-radius: 50%;
+ }
+ .chield:hover{
+    background: white;  
+ }
+ .chield::before{
+    content: "Bangladesh";
+    background: #808080;
+    position: absolute;
+    line-height: 30px;
+    text-align: center;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    
+ }
+ .chield:hover::before {
+    content: "Japan";
+ }
+
+ .dhaka {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction:row;
+    justify-content:space-evenly;
+ }
+
+ .dhaka > div {
+   height: 100px;
+   width: 30%;
+   background-color: aqua;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   text-shadow: 4px 4x 4px #040414;
+   color: #ec8117;
+   box-shadow: 0 0 10px black, 0 0 10px rgb(33, 18, 18);
+   border-radius: 90px/50%;
+   cursor: pointer;
+   transition: 0.5s;
+
+ }
+.dhaka > div:hover{
+   background: green;
+}
+
